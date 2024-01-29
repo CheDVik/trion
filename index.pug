@@ -1,0 +1,153 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head
+	body.body
+		include modules/header
+		main.content
+		
+		section.section.hero(style="background-image: url(images/bg_01.webp);")
+			div.hero-text.px-7
+				img.hero-text__logo(src="images/Trion_only.svg")
+				p.hero-text__p.mt-lg-5.mt-3 Российский разработчик и производитель источников питания, блоков аварийного питания и систем управления освещением.
+				p.hero-text__p.mb-lg-5.mb-3 Мы осуществляем полный цикл выпуска продукции — от проектирования и производства, до сервисного обслуживания.
+
+		section.section.about.mt-5.ez-animate(data-animation="fadeInUp" data-animation-delay="0.2s")
+			div.container-fluid.px-7
+				div.row.py-xl-5.py-2
+					div.col-md-6.col-12.position-relative
+						div.owl-carousel.slider-index
+							div
+								img(src="images/slider/slide_1.webp")
+							div
+								img(src="images/slider/slide_2.webp")
+							div
+								img(src="images/slider/slide_3.webp")
+						div.progressBarC
+							div.qnt
+								span.itemIndex
+								span(style="padding:0 4px;") /
+								span.itemCount
+							div.progressBar
+								div.bar
+							div.customBtn
+								button.owl-prev.customPrevBtn(type="button")
+									i.icon-left-open
+								button.owl-next.customNextBtn(type="button")
+									i.icon-right-open
+					div.col-md-6.col-12.d-flex.flex-column.justify-content-center.position-relative.mt-lg-0.our-target
+						h2 Наша цель
+						p Задача «Трион» — обеспечить социальные, промышленные, дорожно-транспортные и иные инфраструктурные объекты надежными отечественными решениями.
+						p Новые стратегические разработки, квалифицированный персонал, собственные склад, производство, служба качества, отлаженная логистика, все это гарантирует практически бесперебойное обеспечение потребностей рынка.
+						div.indicators.indicators-margin-left
+							div.row
+								div.col-lg.col-12.indicators-cards
+									div.indicators__numbers 10+
+									div.indicators__text лет динамичного развития
+								div.col-lg.col-12.indicators-cards
+									div.indicators__numbers 10+
+									div.indicators__text лет накопленного опыта по управлению качеством
+								div.col-lg.col-12.indicators-cards
+									div.indicators__numbers 60+
+									div.indicators__text единиц испытательного оборудования, средств измерений, оснастки
+
+		section.section.advantages.my-lg-5.my-2
+			div.container-fluid.px-7.pt-0.pb-lg-5.pb-0
+				div.row
+					div.col-12
+						h2 Наши преимущества
+					div.col-lg-3.col-6.mb-lg-0.mb-3
+						div.advantages-card.ez-animate(data-animation="fadeInUp" data-animation-delay="0.2s")
+							img.advantages-card__img(src="images/advantages_01.svg")
+							span.advantages-card__text Современный производственный комплекс
+					div.col-lg-3.col-6.mb-lg-0.mb-3
+						div.advantages-card.ez-animate(data-animation="fadeInUp" data-animation-delay="0.2s")
+							img.advantages-card__img(src="images/advantages_02.svg")
+							span.advantages-card__text Команда профессионалов
+					div.col-lg-3.col-6.mb-lg-0.mb-3
+						div.advantages-card.ez-animate(data-animation="fadeInUp" data-animation-delay="0.2s")
+							img.advantages-card__img(src="images/advantages_03.svg")
+							span.advantages-card__text Постоянный складской запас
+					div.col-lg-3.col-6.mb-lg-0.mb-3
+						div.advantages-card.ez-animate(data-animation="fadeInUp" data-animation-delay="0.2s")
+							img.advantages-card__img(src="images/advantages_04.svg")
+							span.advantages-card__text Отлаженная логистика
+		
+		section.section.bgg.bgg_01
+			div.container-fluid.px-7
+				div.row.py-lg-5
+					div.col-lg-6.col-6
+						h4 Группа аналоговых разработок
+					div.col-lg-6.col-6.px-lg-5      
+						p Разработка аналоговых источников питания постоянного тока для светодиодного освещения, а также элементов для их управления, тестирования и защиты
+						div.btn-o
+							span.btn-text Подробнее
+							div.btn-fill-container
+
+		section.section.bgg.bgg_02
+			div.container-fluid.px-7
+				div.row.py-lg-5
+					div.col-lg-6.col-6
+						h4 Группа цифровых разработок
+					div.col-lg-6.col-6.px-lg-5
+						p Разработка, доработка и поддержка программно-аппаратных комплексов
+						div.btn-o
+							span.btn-text Подробнее
+							div.btn-fill-container
+
+		section.section.bgg.bgg_03
+			div.container-fluid.px-7
+				div.row.py-lg-5
+					div.col-lg-6.col-6
+						h4 Группа разработок источников света
+					div.col-lg-6.col-6.px-lg-5
+						p Разработка светодиодных модулей и линеек, а также подбор связки комплектующих
+						div.btn-o
+							span.btn-text Подробнее
+							div.btn-fill-container
+
+		section.section.bgg.bgg_04
+			div.container-fluid.px-7
+				div.row.py-lg-5
+					div.col-lg-6.col-6
+						h4 Производство
+					div.col-lg-6.col-6.px-lg-5
+						p Производственные площадки находятся в городах Сергиев Посад (РФ) и Шэньчжэнь (КНР). Производство в г. Сергиев Посад выпускает источники питания, в том числе цифровые, и светодиодные модули.
+						div.btn-o
+							span.btn-text Подробнее
+							div.btn-fill-container
+
+		section.section.bgg.bgg_05
+			div.container-fluid.px-7
+				div.row.py-lg-5
+					div.col-lg-6.col-6
+						h4 Отдел технического контроля
+					div.col-lg-6.col-6.px-lg-5
+						p Управление качеством выпускаемой продукции, осуществление входного контроля комплектующих и материалов, контроль качества готовой продукции и ее испытания в производственной структуре
+						div.btn-o
+							a(href="quality.html")
+								span.btn-text Подробнее
+								div.btn-fill-container
+
+
+
+		section.section.my-lg-5
+			div.container-fluid.px-7
+				div.row
+					div.col-lg-3.col-6
+						h4.title-5 «Трион» — действующий член профессиональных ассоциаций
+						img.logo_list.logo_list__60(src="images/logo_apss.webp")
+						img.logo_list.logo_list__60(src="images/logo_arpe.webp")
+					div.col-lg-3.col-6
+						h4.title-5 ПО зарегистрировано в Едином реестре Российских программ для ЭВМ и БД
+						img.logo_list(src="images/logo_rpo.webp")
+					div.col-lg-3.col-6
+						h4.title-5 Продукция компании «Трион» имеет сертификат СТ-1 и заключение Минпромторга РФ
+						img.logo_list(src="images/logo_mpt.webp")
+					div.col-lg-3.col-6
+						h4.title-5 Все разработки защищены патентами на территории РФ
+						img.logo_list(src="images/patents.webp")
+
+	include modules/footer
+	include modules/sidebar
+	include modules/scripts

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.eot');
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-Regular.woff2') format('woff2'),
+        url('Montserrat-Regular.woff') format('woff'),
+        url('Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Bold.eot');
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-Bold.woff2') format('woff2'),
+        url('Montserrat-Bold.woff') format('woff'),
+        url('Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Black.eot');
+    src: local('Montserrat Black'), local('Montserrat-Black'),
+        url('Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-Black.woff2') format('woff2'),
+        url('Montserrat-Black.woff') format('woff'),
+        url('Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ostrovsky-Bold';
+	src: url('Ostrovsky-Bold.woff2');
+	src: local('Ostrovsky Bold'), local('Ostrovsky-Bold'),
+        url('Ostrovsky-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Ostrovsky-Bold.woff2') format('woff2'),
+        url('Ostrovsky-Bold.woff') format('woff'),
+        url('Ostrovsky-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Tenor Sans';
+    src: url('TenorSans.eot');
+    src: local('Tenor Sans'), local('TenorSans'),
+        url('TenorSans.eot?#iefix') format('embedded-opentype'),
+        url('TenorSans.woff2') format('woff2'),
+        url('TenorSans.woff') format('woff'),
+        url('TenorSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

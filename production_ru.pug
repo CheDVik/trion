@@ -1,0 +1,68 @@
+- var name = '02_production'
+- var razdel = '02_production_ru'
+doctype html
+html(lang="ru")
+	head
+		include modules/head
+	body.body
+		include modules/header
+		main.content
+			section.section.my-5
+				div.container-fluid.px-7
+					div.row.py-lg-5.py-2
+						div.col-12.mb-5
+							h1 Производство в Российской Федерации
+						div.col-lg-7.col-12
+							div.owl-carousel-wrapper.position-relative
+								div.owl-carousel.slider-index
+									div
+										img(src="images/slider/slide_13.webp")
+									div
+										img(src="images/slider/slide_14.webp")
+									div
+										img(src="images/slider/slide_15.webp")
+									div
+										img(src="images/slider/slide_16.webp")
+									div
+										img(src="images/slider/slide_17.webp")
+									div
+										img(src="images/slider/slide_18.webp")
+									div
+										img(src="images/slider/slide_19.webp")
+									div
+										img(src="images/slider/slide_20.webp")
+									div
+										img(src="images/slider/slide_21.webp")
+									div
+										img(src="images/slider/slide_22.webp")
+									div
+										img(src="images/slider/slide_23.webp")
+								div.progressBarC.progressBarC_onBottom
+									div.qnt
+										span.itemIndex
+										span(style="padding:0 4px;") /
+										span.itemCount
+									div.progressBar
+										div.bar
+									div.customBtn
+										button.owl-prev.customPrevBtn(type="button")
+											i.icon-left-open
+										button.owl-next.customNextBtn(type="button")
+											i.icon-right-open
+
+						div.col-lg-5.col-12
+							.title-4.mb-4 «Трион» постоянно развивает производственную базу путем инвестиций в современные технологии и оборудование, позволяющие обеспечить бесперебойный производственный процесс и уменьшить стоимость готовой продукции.						
+							p Производство в городе Сергиев Посад  включает в себя участки:
+								ul
+									li участок поверхностного монтажа;
+									li участок монтажа в отверстия печатных плат;
+									li участок кабельных сборок;
+									li участок отмывки и лакировки;
+									li участок маркировки;
+									li участок заливки;
+									li участок контроля;
+									li участок упаковки.
+
+	include modules/footer
+	include modules/sidebar
+	include modules/scripts

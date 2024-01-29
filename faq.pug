@@ -1,0 +1,112 @@
+- var name = '05_faq'
+- var razdel = '05_faq_01'
+doctype html
+html(lang="ru")
+	head
+		include modules/head
+	body.body
+		include modules/header
+		main.content
+			section.section
+			div.container-fluid.px-7
+				div.row.py-xl-5.py-2
+					div.col-12
+						h1 База знаний
+					div.col-lg-3.py-3
+						ul.left-menu 
+							li.left-menu__li 
+								a.left-menu__a.active(href="#") Источники питания 
+							li.left-menu__li 
+								a.left-menu__a(href="#") Аварийное освещение
+							li.left-menu__li 
+								a.left-menu__a(href="#") Гарантийные условия, эксплуатация 
+							li.left-menu__li 
+								a.left-menu__a(href="#") Нормы. Требования. ГОСТы
+							li.left-menu__li 
+								a.left-menu__a(href="#") Совместимость c драйверами российских производителей
+							li.left-menu__li 
+								a.left-menu__a(href="#") Совместимость c драйверами российских производителей
+							li.left-menu__li 
+								a.left-menu__a(href="#") Таблица IP
+							li.left-menu__li 
+								a.left-menu__a(href="#") Что является гарантийным случаем
+							li.left-menu__li 
+								a.left-menu__a(href="#") Бланк рекламации
+					div.col-lg-9.col-12.py-3
+						form.search.pb-5
+							input.search-field(type="text" placeholder="Поиск в базе...")
+							button.search_button(type="button") 
+								svg.search_button__svg(xmlns="http://www.w3.org/2000/svg")
+									path(fill="#727272" fill-rule="evenodd" clip-rule="evenodd" d="M4 12a.5.5 0 01.5-.5h11.7l-5.246-5.246a.5.5 0 010-.708l.692-.692a.5.5 0 01.708 0L20 12.5l-7.646 7.646a.5.5 0 01-.708 0l-.692-.692a.5.5 0 010-.708L16.2 13.5H4.5A.5.5 0 014 13v-1z")
+
+						h3 Источники питания (опции, функционал)
+						div.accordion
+							div.accordion_titleWrapper
+								div.bold Почему в драйверах с диммированием провода DIM выведены с той же стороны, что и питание LED-модуля?
+								svg.accordion_icon(width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+									path(d="M10 8l4.5 4.5L10 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round")
+							div.accordion_textWrapper
+								p Так сложилось исторически. В будущих разработках мы, возможно, изменим сторону вывода проводов
+
+						div.accordion
+							div.accordion_titleWrapper
+								div.bold Какие компоненты источника питания относятся к пассивным и какие к активным?
+								svg.accordion_icon(width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+									path(d="M10 8l4.5 4.5L10 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round")
+							div.accordion_textWrapper
+								p Общая информация: к активным относятся устройства способные усиливать или преобразовывать электрические сигналы. К пассивным относятся такие устройства, которые предназначены для перераспределения электрической энергии.
+								p Пассивные элементы: трансформаторы, варисторы, керамические конденсаторы, электролитические конденсаторы, пленочные конденсаторы, танталовые конденсаторы, катушки индуктивности, резисторы, предохранители, индикаторы.
+								p Активные элементы: тиристоры, симисторы, транзисторы, стабилитроны, диоды.
+								p Электромеханические элементы: реле, разъемы.
+
+						div.accordion
+							div.accordion_titleWrapper
+								div.bold Зачем в ИП Трион применяется гальваническая развязка?
+								svg.accordion_icon(width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+									path(d="M10 8l4.5 4.5L10 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round")
+							div.accordion_textWrapper
+								p Многие европейские производители выпускают источники питания без гальванической развязки, и так ТОЖЕ МОЖНО. Однако такой источник питания требует большого количества нюансов при сборке светильника: изолированный корпус, светодиодные модули на стеклотекстолите или другом материале с ОЧЕНЬ высокой диэлектрической прочностью, чтобы пройти сертификационные испытания. Мы же делаем ИП для широкого круга потребителей, и не можем знать, как и с чем вы будете их использовать. И вообще, мы любим алюминий в качестве подложки. Он удобен в сборке и прекрасно отводит тепло. 
+								p В общем, изготовить ИП без развязки, который будет держать 1,5кВ между входом и выходом можно, но не будет сильно дешевле, чем ип с гальванической развязкой. И все электрики будут живы, что тоже немаловажно. 
+
+
+						div.accordion
+							div.accordion_titleWrapper
+								div.bold Как работает диммирование по протоколу 0-10?
+								svg.accordion_icon(width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+									path(d="M10 8l4.5 4.5L10 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round")
+							div.accordion_textWrapper
+								p Визуально диммирование – это плавное снижение/увеличение уровня освещенности. При повороте светорегулятора (диммера) ИП выдает напряжение от 0 до 10 В на LED-модуль. Ток при этом остается прежним, а мощность LED-модуля плавно понижается в зависимости от напряжения на выходе диммера
+
+						div.accordion
+							div.accordion_titleWrapper
+								div.bold Как работает грозозащита? Какие классы по защите существуют?
+								svg.accordion_icon(width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+									path(d="M10 8l4.5 4.5L10 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round")
+							div.accordion_textWrapper
+								p Классы грозозащиты (правильно – молниезащита):
+								ul
+									li I класс – устанавливается для вышек передачи электроэнергии
+									li II класс – устанавливается для подстанций
+									li III класс – устанавливается в конечном продукте
+								p В ИП грозозащита обеспечена варистором, который в случае прихода импульса большой мощности, взрывается и не пропускает его далее на LED-линейку. Таким образом, драйвер выходит из строя, но светильник остается невредимым. Потребуется замена ИП, а не ремонт/замена светильника
+
+						div.accordion
+							div.accordion_titleWrapper
+								div.bold Делаете ли ИП по ТЗ под другим брендом? Или ноунейм?
+								svg.accordion_icon(width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+									path(d="M10 8l4.5 4.5L10 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round")
+							div.accordion_textWrapper
+								p Нет, мы всегда делаем ИП под своим брендом
+
+						div.accordion
+							div.accordion_titleWrapper
+								div.bold Как себя поведет комплект LED-модуль+ИП, если ток ИП меньше, чем рассчитан LED-модуль
+								svg.accordion_icon(width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+									path(d="M10 8l4.5 4.5L10 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round")
+							div.accordion_textWrapper
+								p В этом случае произойдет падение напряжения на модуле и светильник будет светить менее ярко							
+
+
+	include modules/footer
+	include modules/sidebar
+	include modules/scripts

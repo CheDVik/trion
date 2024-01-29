@@ -1,0 +1,55 @@
+div.overlay
+div.sidebar
+	div.container-fluid
+		div.row
+			div.col-8.pt-3.pb-4.ps-4
+				a.d-flex.justify-content-start.align-items-start(href="/")
+					img(src="images/core/trion_logo.svg")
+			div.col-12
+				nav
+					ul.sidebar-menu
+						li(class=(name === "01_research" ? "sidebar-menu__li active" : "sidebar-menu__li"))
+							a.sidebar-menu__li_a(href="#") Служба исследований и разработок
+								ul
+									li.sidebar-menu__li_li
+										a.sidebar-menu__li_li_a(href="#") Разработка изделий
+									li.sidebar-menu__li_li
+										a.sidebar-menu__li_li_a(href="#") Группы разработок
+						li(class=(name === "02_production" ? "sidebar-menu__li active" : "sidebar-menu__li"))
+							a.sidebar-menu__li_a(href="#") Производство
+								ul
+									li.sidebar-menu__li_li
+										a.sidebar-menu__li_li_a(href="production_ru.html") Производство РФ
+									li.sidebar-menu__li_li
+										a.sidebar-menu__li_li_a(href="production_cn.html") Производство КНР
+						li(class=(name === "03_quality" ? "sidebar-menu__li active" : "sidebar-menu__li"))
+							a.sidebar-menu__li_a(href="#") Служба качества
+								ul
+									li.sidebar-menu__li_li
+										a.sidebar-menu__li_li_a(href="quality.html#quality_01") Отдел контроля качества
+									li.sidebar-menu__li_li
+										a.sidebar-menu__li_li_a(href="quality.html#quality_02") Управление качеством
+									li.sidebar-menu__li_li
+										a.sidebar-menu__li_li_a(href="quality.html#quality_03") Гарантия и рекламации
+						li(class=(name === "04_storage" ? "sidebar-menu__li active" : "sidebar-menu__li"))
+							a.sidebar-menu__li_a(href="#") Склад готовой продукции
+								ul
+									li.sidebar-menu__li_li
+										a.sidebar-menu__li_li_a(href="storage.html#storage_01") Условия отгрузки
+									li.sidebar-menu__li_li
+										a.sidebar-menu__li_li_a(href="storage.html#storage_02") Условия хранения
+									li.sidebar-menu__li_li
+										a.sidebar-menu__li_li_a(href="storage.html#storage_03") Адрес склада
+						li(class=(name === "05_faq" ? "sidebar-menu__li active" : "sidebar-menu__li"))
+							a.sidebar-menu__li_a(href="faq.html") База знаний
+						li(class=(name === "06_career" ? "sidebar-menu__li active" : "sidebar-menu__li"))
+							a.sidebar-menu__li_a(href="https://about.trion-led.ru/career/") Карьера
+						li(class=(name === "07_contacts" ? "sidebar-menu__li active" : "sidebar-menu__li"))
+							a.sidebar-menu__li_a(href="contacts.html") Контакты
+
+			div.col-12.mt-5.ps-4
+				div.d-flex.flex-column
+					a(href="tel:+74955604857") +7 (495) 560-48-57
+					a.mt-2(href="mail:moscow@trion-led.ru") moscow@trion-led.ru
+	div.modl-close
+		i.icon.icon-cancel
